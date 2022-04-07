@@ -1,0 +1,24 @@
+.post-detail-container {
+	max-width: 768px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.post-detail-container > img {
+	max-width: 100%;
+	object-fit: cover;
+}
+.post-detail-container > .img-detail {
+	margin: auto;
+	display: block;
+	height: 20rem;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.post-detail-container h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}

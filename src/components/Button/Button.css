@@ -1,0 +1,13 @@
+.icon-btn-loading {
+	margin-right: 0.25rem;
+
+	animation: iconLoading 0.75s infinite;
+}
+@keyframes iconLoading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

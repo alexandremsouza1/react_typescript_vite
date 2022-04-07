@@ -1,0 +1,21 @@
+.box-add-file {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f1f1f1;
+	border-radius: 10px;
+	border-color: #616161;
+	border-style: dashed;
+	border-width: 2px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+.box-add-file > * {
+	width: 150px;
+	height: 150px;
+}
+.box-add-file > img {
+	object-fit: cover;
+}
