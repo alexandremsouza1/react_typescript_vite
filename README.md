@@ -6,9 +6,9 @@ Duong son ba
 ## Demo
 [https://react-bads-blog.vercel.app/]('https://react-bads-blog.vercel.app/')
 ## Use
- -React Typescript
- -Vite
- -Redux - redux-saga
+ - React Typescript
+ - Vite
+ - Redux - redux-saga
 
 ## Command
 - Install ````npm install ````
