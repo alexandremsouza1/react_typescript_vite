@@ -1,23 +1,25 @@
 # NAL - FE - REACT Blog
 
+## Author
+Duong son ba
+
+## Demo
+[https://react-bads-blog.vercel.app/]('https://react-bads-blog.vercel.app/')
 ## Use
- -Typescript
+ -React Typescript
  -Vite
  -Redux - redux-saga
 
-## Run
+## Command
+- Install ````npm install ````
 - Run dev: ```` npm run dev ````
-- Run start: ```` npm run dev ````
-- Run dev: ```` npm run dev ````
+- Run build develop: ```` npm run build:dev````
+- Run build production: ```` npm run build:product ````
+- Run preview ````npm run preview ````
+- Check lint ````npm run lint ````
+- Fix lint ````npm run fix:lint ````
+- Format ````npm run format ````
 
-## 3.1 Run project at develop environment
-
-- run "yarn install" install all packages
-- run "yarn dev" run dev environment
-- run "yarn build" run build product environment
-- run "yarn test" run unit test
-
-## [4. Setup NGINX](NGINX_SETUP.md)
 
 ## 4. License
 
