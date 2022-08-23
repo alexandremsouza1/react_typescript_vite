@@ -5,9 +5,9 @@ import { useAppSelector } from '@src/hooks/usAppSelector';
 import React from 'react';
 import './ListPost.css';
 export default function ListPost() {
-	const data = useAppSelector(state => state.post.data);
-	const isPostLoading = useAppSelector(state => state.post.isLoading);
-	const errorMessage = useAppSelector(state => state.post.error);
+	const data = useAppSelector(state => state.products.data);
+	const isPostLoading = useAppSelector(state => state.products.isLoading);
+	const errorMessage = useAppSelector(state => state.products.error);
 	if (isPostLoading) {
 		return (
 			<div className="loading-box">
@@ -18,23 +18,25 @@ export default function ListPost() {
 	if (errorMessage) {
 		return (
 			<div className="loading-box">
-				<h2>Đã có lỗi xảy ra!</h2>
+				<h2>Erro!</h2>
 			</div>
 		);
 	}
 	if (data.length === 0) {
 		return (
 			<div className="loading-box">
-				<h2>Không tìm thấy bài viết nào</h2>
+				<h2>Nada a exibir</h2>
 			</div>
 		);
 	}
 
 	return (
 		<WrapperPost>
-			{data.map(item => (
-				<PostItem key={item.id} data={item} />
+			<ul>
+			{data.map((item,key) => (
+				<li key={key}>{item.info.name}</li> 
 			))}
+			</ul>
 		</WrapperPost>
 	);
 }

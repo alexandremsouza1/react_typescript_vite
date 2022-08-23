@@ -3,7 +3,7 @@ import { getAccessToken, setAccessToken } from '../helper/token';
 import { configApp } from './config';
 
 const apiClient = axios.create({
-	baseURL: `${configApp.DOMAIN_API}/${configApp.URL_API_PREFIX}/${configApp.API_VERSION}/`,
+	baseURL: `${configApp.DOMAIN_API}/${configApp.URL_API_PREFIX}/`,
 	headers: {
 		'content-type': 'application/json',
 	},
