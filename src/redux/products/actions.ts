@@ -15,7 +15,14 @@ export const getProductsAction = (): PayloadAction<null, typeof GET_PRODUCTS> =>
 
 
 export type GetProductSuccessPayload = {
-	data: IProductDataResponse[];
+	data: {
+		config: any;
+		data: IProductDataResponse[];
+		headers: any;
+		request: XMLHttpRequest;
+		status: number;
+		statusText: string;
+	}
 };
 export const getProductSuccess = ({
 	data,
